@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        
+        <style type="text/css">
+        
+            .box{
+                display: inline-block;
+                width: 30%;
+                height: 200px;
+                margin: 20px;
+                text-align: center;
+                color: white;
+                background: black;
+            }
+        
+            #one:hover{
+                 background: radial-gradient(#5f2c82 40%, #3498db 60%);
+                 transform: rotateX(45deg);
+                 transform: rotateZ(40deg);
+                 transition-duration: 1s, 3s, 200ms;
+            }
+            
+             #two:hover{
+                 background: linear-gradient(-45deg, rgba(0,0,0,0), red);
+                 transform: scale(.5, .5);
+                 transition-duration: 1s, 3s, 200ms;
+            }
+            
+            #three:hover{
+                 background: linear-gradient(to left, #FF4E50, #F9D423);
+                 transform: skew(15deg, 15deg);
+                 transition-duration: 1s, 3s, 200ms;
+            }
+            
+            #four:hover {
+                 background: linear-gradient(to right, #F0C27B, #4B1248);
+                 transform: rotate(-10deg) rotateX(20deg);
+                 transition-duration: 1s, 3s, 200ms;
+            }
+            
+            #five:hover {
+                 background: linear-gradient(to right, #FFED21 1%, #FF2A06 50%, #9412FF 100%);
+                 transform: translate(300px, -400px);
+                 transition-duration: 1s, 3s, 200ms;
+            }
+            
+            #six:hover {
+                 background: black;
+                 color: white;
+            }
+            
+            #buttonOne{
+                color: white;
+                width: 200px;
+                height: 80px;
+                background: radial-gradient(#ffa7a7 40%, #fbfbfb 60%);
+            }
+            
+            .button{
+                color: white;
+                text-decoration: none;
+                box-shadow: 0px 40px 30px #888888;
+            }
+            
+            .text:hover{
+                text-align: center;
+                padding: 10px;
+                transform: rotateX(45deg);
+                transition-duration: 1s, 3s, 200ms;
+            }
+            
+        </style>
+    
+    </head>
+    <body>
+
+        <div id="one" class="box">Box 1</div>
+        <div id="two" class="box">Box 2</div>
+        <div id="three" class="box">Box 3</div>
+        <div id="four" class="box">Box 4</div>
+        <div id="five" class="box">Box 5</div>
+        <div id="six" class="box">
+            <p class="text">
+                This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! This is the sixth box! And you shall obey my orders!!! 
+                
+            </p>
+        </div>
+
+        <a href="#" class="button"> 
+            <button id="buttonOne">Go Back!!!</button>
+        </a> 
+        
+    </body>
+</html>
+

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Flexbox</title>
+		<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<style type="text/css">
+		nav{
+			font-family: roboto;
+			margin: 30px auto;
+			width: 90%;
+			height: 500px;
+			display: flex; 
+			flex-direction: column;
+			align-items:stretch;
+			border-radius: 10px;
+			list-style-type: none;
+			padding: 0;	 
+			margin-bottom: 50px;
+		}
+		
+		body{
+			background-color: #F5D76E;
+		}
+				
+		a{
+			text-decoration: none;
+			color: white;
+			flex:1; 
+			height: 30px;
+			font-family: Dosis;
+			padding:20px;
+			text-align: center;
+			font-size: 2em;
+			border-bottom:1px solid white;
+		}
+		#logoNav{
+			font-size: 2em;
+			font-weight: bold;
+			}
+			
+		#landing{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+			
+		}
+		
+		h2{
+			font-family: Dosis;
+			font-size: 4em;
+			text-align: center;
+		}
+		
+		#cards{
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.card{
+			background-color: #D3D3D3;
+			margin: 25px;
+			padding: 15px;
+			border-radius: 5%;
+			position: relative;
+			z-index: 1;
+			perspective: 1000;
+			transform-style: preserve-3d;
+			transition: all 1.0s linear;
+		}
+		 
+		.card:hover{
+				transform: rotateY(180deg);
+  				box-shadow: -5px 5px 5px #aaa;
+		}
+		
+		.card h4{
+			font-family: Dosis;
+			font-size: 2rem;
+		}
+		
+		.card img{
+			width:100%;
+			border-radius: 50%;
+		}
+		
+		.card p{
+			font-family: dosis;
+			font-size: 1rem;
+			border-radius: 5%;
+		}
+		
+		
+		@media screen and (min-width: 700px){ 
+			nav{
+				flex-flow: row;
+				align-items:baseline;
+				height: 150px;
+				height: 100px;
+				
+			}
+			a{
+				font-size: 1.3em;
+				border:none; 
+			}
+			
+			#logoNav{
+				flex:6;
+				text-align: left;
+			}
+			
+			#landing{
+				flex-wrap: nowrap;
+				margin-bottom: 30px;
+				
+			}
+			
+			#cards{
+				display: flex;
+				flex-direction: row;
+			}
+			
+			.card{
+				background-color: 	#DCDCDC;
+				margin: 10px;
+				padding: 15px;
+				border-radius: 5%;
+				position: relative;
+				z-index: 1;
+				perspective: 1000;
+				transform-style: preserve-3d;
+				transition: all 1.0s linear;
+			}
+			
+			.card:hover{
+				transform: rotateY(180deg);
+  				box-shadow: -5px 5px 5px #aaa;
+			}
+		
+			.card h4{
+			
+			}
+		
+			.card img{
+				width:100%;
+				border-radius: 50%;
+			}
+		
+			.card p{
+				font-family: dosis;
+				font-size: 1rem;
+			}
+			
+			
+		}
+		</style>
+</head>
+<body>
+	<nav>
+		<a id="logoNav">CHOCOBLOCK</a>
+		<a href="#">Home</a>
+		<a href="#">Projects</a>
+		<a href="#">About</a>
+		<a href="#">Contact</a>
+		<a href="#">Photos</a>
+	</nav>
+	
+	<section id="landing">
+		<div><h2>Make Creative Clever Fun Apps. Simple</h2></div>
+		<div><img src="../images/laptop.png"></div>
+	</section>
+	
+	<section id="cards">
+		<div class="card">
+			<img src="../images/graphic1.png" alt="design pic">
+			<h4>Web Info Sessions</h4>
+			<p>If you have questions about your career in...</p>
+		</div>
+		
+		<div class="card">
+			<img src="../images/graphic2.png" alt="design pic">
+			<h4>Remote Learning</h4>
+			<p>If you have questions about your career in...</p>
+		</div>
+		
+		<div class="card">
+			<img src="../images/graphic3.png" alt="design pic">
+			<h4>Nameless Card Name</h4>
+			<p>If you have questions about your career in If you have questions about your career in.</p>
+		</div>
+	</section>
+</body>
+</html>

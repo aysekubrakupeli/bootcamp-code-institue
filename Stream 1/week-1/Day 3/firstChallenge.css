@@ -1,0 +1,51 @@
+    #main{
+        width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .owl{
+        float: left;
+        margin: 10px;
+        border-radius: 50%;
+        -webkit-filter: sepia(1);
+    }
+    
+    .frog{
+        float: right;
+        margin: 10px;
+        border-radius: 50%;
+        -webkit-filter: hue-rotate(249deg);
+    }
+    
+    .containerOne {
+        display: inline-block;
+        width: 400px;
+        padding: 10px;
+        background-image: url(../images/fire.jpg);
+        background-size: auto;
+    }
+    
+    .containerTwo{
+        display: inline-block;
+        width: 400px;
+        padding: 10px;
+        background-image: url(../images/ics.jpg);
+        background-size: cover;
+        background-size: contain;
+    }
+    
+    .paragraph{
+        text-align: center;
+        color: white;
+    }
+    
+    .description{
+        color: red;
+        text-align: center;
+    }
+    
+    .descriptionTwo{
+        color: white;
+        text-align: center;
+    }

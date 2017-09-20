@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <meta charset="UTF-8">
+      <title>Form</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+   
+      <!--
+         Form with HTML5 tags and basic CSS
+      -->
+      <style type="text/css">
+
+      body{
+         font-family: 'Roboto', sans-serif;
+      }
+         #container{
+            width: 550px;
+            margin: auto;
+
+         }
+
+         legend{
+            font-size: 30px;
+            background-color: #fff;
+            border-radius: 5px;
+            border: 1px solid #999;
+            padding: 4px 15px;
+         }
+            
+         label.field{
+            display: block;
+            text-align: right;
+            width: 100px;
+            float: left;
+            clear: both;
+
+         }
+         input{
+            width: 200px;
+            border-radius: 5px;
+            padding: 6px 8px;
+         }
+         
+         .field{
+            padding: 6px 8px;
+         }
+
+         #currency{
+             width: 220px;
+             border-radius: 5px;
+             padding: 6px 8px;
+         }
+
+         fieldset{
+            width: 450px;
+            border: 1px solid #999;
+            border-radius: 20px;
+            clear: both;
+            padding: 20px;
+            margin-bottom: 100px;
+            background-color:rgba(129, 187, 201,.2);
+
+         }
+      </style>
+   </head>
+   <body>
+      <div id="container">
+        <fieldset><legend>Contact</legend>
+           <form>
+               <label class="field">Date:</label><input type="date" name="Date" required=""/><br>
+               <label><input type="checkbox" name="course" value="Starter"/>Starter</label>
+               <label><input type="checkbox" name="course" value="Main"/>Main</label>
+               <label><input type="checkbox" name="course" value="Dessert"/>Dessert</label><br>
+               <label><input type="radio" name="Gender" value="Female">Female</label>
+               <label><input type="radio" name="Gender" value="Male">Male</label>
+               <label><input type="radio" name="Gender" value="Other">Other</label><br>
+               
+               <label class="field "for="group">Group:</label>
+                  <select id="option">
+                    <option value="sun">Sun</option> 
+                    <option value="earth">Earth</option>
+                    <option value="fire">Fire</option> 
+                    <option value="water">Water</option> 
+                  </select> <br>
+               <label class="field">Range: </label><input type="range" min="0" max="11"/><br>
+                  <input list="genres" name="music">Music: 
+                     <datalist is="genres">
+                        <option value="Pop">
+                        <option value="Rock">
+                        <option value="Hip-Hop">
+                        <option value="Classical">
+                     </datalist>
+                  <input type="submit" value="Submit"/>
+           </form>
+        </fieldset>
+    </div>
+   </body>
+
+</html>
+
+
+

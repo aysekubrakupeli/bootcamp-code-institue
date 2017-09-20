@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Box Model</title>
+		<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		
+			#container {
+				text-align: center;
+				width:450px;
+				background-color:#AA4639;
+				height: 125px;;
+			}
+			
+			#containerwhite {
+				text-align: right;
+				width:450px;
+				background-color:#AA4639;
+				height: 125px;;
+			}
+			
+			#containerred {
+				text-align: left;
+				width:450px;
+				background-color:#AA4639;
+				height: 125px;;
+			}
+
+			.boxc{
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				width: 150px;
+				height: 100%;
+				background-color: #81BBC9;
+				display: inline-block;
+			}
+
+			h1{
+				text-align: center;
+				margin: 0;
+				font-family: Roboto;
+  			}
+
+			.white{
+				color: white;
+			}
+			
+			.red{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="boxc"><h1>Hola</h1></div>
+		</div>
+		<div id="containerwhite">
+			<div class="boxc"><h1 class="white">Hola</h1></div>
+		</div>
+		<div id="container">
+			<div class="boxc"><h1>Hola</h1></div>
+		</div>
+		<div id="containerred">
+			<div class="boxc"><h1 class="red">Hola</h1></div>
+		</div>
+	</body>
+</html>
