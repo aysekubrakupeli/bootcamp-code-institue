@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <title>Angular Testing</title>
+   
+    <base href="/">
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body ng-app="sampleApp">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Angular Test</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/"> Home </a></li>
+                <li><a href="/about"> About </a></li>
+                <li><a href="/contact"> Contact </a></li>
+            </ul>
+        </div>
+        </nav>
+        
+        <div ng-view>
+        <!-- This is our ng-view. The contents of the files in the templates directory are loaded here by Angular
+        when we click on the appropriate link. app.js decides which file is loaded. -->
+        </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/controller.js"></script>
+</body>
+</html>
