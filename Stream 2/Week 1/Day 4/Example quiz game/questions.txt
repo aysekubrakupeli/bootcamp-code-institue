@@ -1,0 +1,26 @@
+What is the capital of France?
+Paris
+What is the capital of Ireland?
+Dublin
+What is the capital of Turkey
+Ankara
+What is the capital of The Netherlands
+Amsterdam
+What is the capital of Egypt
+Cairo
+What is the capital of Belgium
+Brussels
+What is the capital of Germany
+Berlin
+What is your favourite colour?
+Blue
+How old are you?
+25
+How many siblings do you have?
+2
+Why?
+Because
+Where
+Where ever
+When
+Soon
